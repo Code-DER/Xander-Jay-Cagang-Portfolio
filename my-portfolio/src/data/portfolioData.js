@@ -1,6 +1,6 @@
 export const portfolioData = {
     name: "Xander Jay C. Cagang",
-    tagline: "",
+    tagline: "Code for the better.",
     about: "",
     education: [
         {
