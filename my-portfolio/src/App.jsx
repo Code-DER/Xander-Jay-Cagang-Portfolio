@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <div className="scroll-smooth">
       <Navbar />
       <Hero />
-      <About />      
+      <About />
+      <Contact />
     </div>
   )
 }

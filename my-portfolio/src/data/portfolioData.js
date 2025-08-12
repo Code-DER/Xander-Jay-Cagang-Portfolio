@@ -4,13 +4,13 @@ export const portfolioData = {
     about: "I am a passionate web developer with a focus on creating dynamic and progressive web applications. My journey in web development has been driven by a desire to build user-friendly and efficient solutions that make a difference.",
     education: [
         {
-
+            
         },
         {
-
+            
         },
         {
-
+            
         },
     ],
     projects: [
@@ -25,9 +25,9 @@ export const portfolioData = {
         },
     ],
     contact: {
-        email: "",
-        github: "",
-        facebook: "",
-        instagram: "",
+        email: "xxxcagang@gmail.com",
+        github: "https://github.com/Code-DER",
+        facebook: "https://www.facebook.com/xaxangderder/",
+        instagram: "https://www.instagram.com/derderxaxang/",
     }
 }
