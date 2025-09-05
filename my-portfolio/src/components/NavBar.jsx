@@ -15,10 +15,10 @@ export default function NavBar() {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50"
+            className="fixed top-0 left-0 w-full z-50 bg-white/2 backdrop-blur-md shadow-lg py-2"
         >
             <div className='max-w-6xl mx-auto flex items-center justify-between gap-8 py-3 text-gray-700 font-medium'>
-                <div className='text-xl font-bold'>
+                <div className='text-xl text-white font-bold'>
                     Code-DER
                 </div>
                 <div className='flex gap-8'>
@@ -26,7 +26,7 @@ export default function NavBar() {
                         <Link
                             key={link.id}
                             to={link.path}
-                            className="flex items-center gap-2 hover:text-pink-500 transition colors"
+                            className="text-white flex items-center gap-2 hover:text-pink-500 transition colors"
                         >
                             {link.icon}
                             {link.name}
