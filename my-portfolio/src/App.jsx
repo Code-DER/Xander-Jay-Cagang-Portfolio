@@ -1,15 +1,16 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/Navbar'
+import NavBar from './components/NavBar'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
+import bg from './assets/bg.svg'
 
 function App() {
 
   return (
-    <>
+    <div className='min-h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${bg})` }}>
       <NavBar />
       <div className='pt-16'>
         <Routes>
@@ -20,7 +21,7 @@ function App() {
           <Route path="*" element={<h1>404 - Page Not Found</h1>} />
         </Routes>
       </div>
-    </>
+    </div>
   )
 }
 

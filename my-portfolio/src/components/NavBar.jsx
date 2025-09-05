@@ -4,10 +4,10 @@ import { FaHome, FaUser, FaFolder, FaRegAddressBook} from 'react-icons/fa';
 
 export default function NavBar() {
     const links = [
-        { name: "Home", path: "/", icon: <FaHome /> },
-        { name: "About", path: "/about", icon: <FaUser /> },
-        { name: "Projects", path: "/projects", icon: <FaFolder /> },
-        { name: "Resume", path: "/resume", icon: <FaRegAddressBook /> },
+        { id: 1, name: "Home", path: "/", icon: <FaHome /> },
+        { id: 2, name: "About", path: "/about", icon: <FaUser /> },
+        { id: 3, name: "Projects", path: "/projects", icon: <FaFolder /> },
+        { id: 4, name: "Resume", path: "/resume", icon: <FaRegAddressBook /> },
     ];
     
     return (
