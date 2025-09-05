@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     const links = [
-        { name: "Home", id: "hero" },
-        { name: "About", id: "about" },
-        { name: "Projects", id: "projects" },
-        { name: "Resume", id: "resume" },
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+        { name: "Projects", path: "/projects" },
+        { name: "Resume", path: "/resume" },
     ]
     
     return (
@@ -17,13 +18,13 @@ export default function NavBar() {
         >
             <div className="max-w-6xl mx-auto flex justify-center gap-8 py-3 text-gray-700 font-medium">
                 {links.map(link => (
-                    <a
+                    <Link
                         key={link.id}
-                        href={`#${link.id}`}
+                        to={link.path}
                         className="hover:text-pink-500 transition colors"
                     >
                         {link.name}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </motion.nav>
