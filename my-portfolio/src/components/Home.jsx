@@ -34,24 +34,28 @@ export default function Home() {
 
                 {/* Image Area */}
                 <motion.div
-                    className="flex-1 flex justify-center md:justify-end"
+                    className="flex-1 flex justify-center"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                    <motion.img 
-                        src={portfolioData.image}
-                        alt={portfolioData.name}
-                        className="w-64 h-64 object-cover rounded-full border-4 border-red-500 shadow-lg"
+                    <motion.div
+                        className="p-[4px] rounded-full bg-gradient-to-r from-[#004CD7] to-[#4A90E2] shadow-lg"
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
-                    />
+                    >
+                        <motion.img 
+                            src={portfolioData.image}
+                            alt={portfolioData.name}
+                            className="w-64 h-64 object-cover rounded-full"
+                        />
+                    </motion.div>
                 </motion.div>
             </motion.section>
 
             {/* Short intro */}
             <motion.section
-                className="min-h-auto flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 px-20"
+                className="min-h-auto flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 px-20 py-20"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
