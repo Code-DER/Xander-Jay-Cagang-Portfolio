@@ -4,7 +4,7 @@ import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-30 text-white">
+        <div className="min-h-screen flex flex-col gap-20 px-8 md:px-20 text-white">
             {/* Hero */}
             <motion.section
                 className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8"
@@ -48,13 +48,43 @@ export default function Home() {
             </motion.section>
 
             {/* Short intro */}
-            <motion.section>
-
+            <motion.section
+                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+            >
+                {/* Text Area */}
+                
+                <h1 className="text-3xl md:text-4xl font-bold">
+                    Short introduction about me
+                </h1>
+                <div className="max-w-2xl space-y-2 text-gray-300">
+                    <p>I am currently a Computer Science student.</p>
+                    <p>I enjoy web development ever since I started learning it.</p>
+                    <p>Some of my other hobbies are photography, music, and travelling.</p>
+                </div>
             </motion.section>
 
             {/* Contacts */}
-            <motion.section>
-
+            <motion.section
+                className="flex flex-col items-center justify-center gap-6 py-16"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            >
+                <h2>Find and Connect with me</h2>
+                <div className="flex gap-6 text-3xl">
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">
+                        <FaGithub className="hover:text-[#004CD7] transition-colors" />
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+                        <FaFacebook className="hover:text-[#004CD7] transition-colors" />
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" rel="noreferrer">
+                        <FaInstagram className="hover:text-[#004CD7] transition-colors" />
+                    </a>
+                </div>
             </motion.section>
         </div>
     );
