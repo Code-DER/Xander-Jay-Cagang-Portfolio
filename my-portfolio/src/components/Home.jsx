@@ -87,22 +87,28 @@ export default function Home() {
 
             {/* Contacts */}
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16"
+                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
-                <h2>Find and Connect with me</h2>
-                <div className="flex gap-6 text-3xl">
-                    <a href="https://github.com/" target="_blank" rel="noreferrer">
-                        <FaGithub className="hover:text-[#004CD7] transition-colors" />
-                    </a>
-                    <a href="https://facebook.com/" target="_blank" rel="noreferrer">
-                        <FaFacebook className="hover:text-[#004CD7] transition-colors" />
-                    </a>
-                    <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-                        <FaInstagram className="hover:text-[#004CD7] transition-colors" />
-                    </a>
+                <h2 className="text-3xl font-bold text-center">Find me on</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl text-3xl">
+                    {Object.entries(portfolioData.socials).map(([key, social]) => { 
+                        const Icon = social.icon;
+                        return (
+                            <a 
+                                key={key} 
+                                href={social.url} 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="flex items-center gap-3 text-lg text-gray-300 hover:text-[#004CD7] transition-colors"    
+                            >
+                                <Icon className="text-3xl"/>
+                                <span>{social.username}</span>
+                            </a>
+                        );
+                    })}
                 </div>
             </motion.section>
         </>

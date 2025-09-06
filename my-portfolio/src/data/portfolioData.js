@@ -1,12 +1,18 @@
+import { MdEmail } from "react-icons/md";
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+
 export const portfolioData = {
     name: "Xander Jay C. Cagang",
     title: "Web Developer",
     tagline: "Code for the better.",
     image: "public/my_image.jpg",
     socials: {
-        github: "https://github.com/Code-DER",
-        facebook: "https://www.facebook.com/xaxangderder/",
-        instagram: "https://www.instagram.com/derderxaxang/",
+        email: {url: "mailto:xxxcagang@gmail.com", icon: MdEmail, username: "xxxcagang@gmail.com"},
+        linkedin: {url: "www.linkedin.com/in/xander-jay-cagang-9122b1380", icon: FaLinkedin, username: "Xander Jay Cagang"},
+        github: {url: "https://github.com/Code-DER", icon: FaGithub, username: "Code-DER"},
+        facebook: {url: "https://www.facebook.com/xaxangderder/", icon: FaFacebook, username: "xaxangderder"},
+        instagram: {url: "https://www.instagram.com/derderxaxang/", icon: FaInstagram, username: "derderxaxang"},
+        tiktok: {url: "https://www.tiktok.com/@xanderderjay", icon: FaTiktok, username: "xanderderjay"},
     },
     about: "I am a passionate web developer with a focus on creating dynamic and progressive web applications. My journey in web development has been driven by a desire to build user-friendly and efficient solutions that make a difference.",
     education: [
