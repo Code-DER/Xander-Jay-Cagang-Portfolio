@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "../data/portfolioData";
 import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import Layout from "./Layout";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col gap-20 px-8 md:px-20 text-white">
+        <>
             {/* Hero */}
             <motion.section
                 className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8"
@@ -86,6 +87,6 @@ export default function Home() {
                     </a>
                 </div>
             </motion.section>
-        </div>
+        </>
     );
 }

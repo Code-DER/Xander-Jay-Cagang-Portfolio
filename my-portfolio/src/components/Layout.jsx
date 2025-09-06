@@ -1,0 +1,19 @@
+import bg from '../assets/bg.svg'
+import NavBar from './NavBar'
+
+export default function Layout({ children }) {
+    return (
+        <div
+            className='min-h-screen flex flex-col bg-cover bg-center bg-no-repeat'
+            style={{ backgroundImage: `url(${bg})` }}
+        >
+            <NavBar />
+            <main className='flex-1 px-8 md:px-20 py-8 mt-16'>
+                {children}
+            </main>
+            <footer>
+                © 2025 My Portfolio
+            </footer>
+        </div>
+    )
+}
