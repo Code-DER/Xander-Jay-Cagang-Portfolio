@@ -5,7 +5,7 @@ export const portfolioData = {
     name: "Xander Jay C. Cagang",
     title: "Web Developer",
     tagline: "Code for the better.",
-    image: "public/my_image.jpg",
+    image: "/my_image.jpg",
     socials: {
         email: {url: "mailto:xxxcagang@gmail.com", icon: MdEmail, username: "xxxcagang@gmail.com"},
         linkedin: {url: "www.linkedin.com/in/xander-jay-cagang-9122b1380", icon: FaLinkedin, username: "Xander Jay Cagang"},

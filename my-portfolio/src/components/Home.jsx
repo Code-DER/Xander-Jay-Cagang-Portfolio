@@ -70,7 +70,7 @@ export default function Home() {
                         <br/>
                         <p>I enjoy <span className="text-[#004CD7]">web development</span> ever since I started learning it.</p>
                         <br/>
-                        <p>Some of my other hobbies are <span className="text-[#004CD7]">photography, music, and travelling</span>.</p>
+                        <p>Some of my other hobbies are <span className="text-[#004CD7]">photography</span>, <span className="text-[#004CD7]">music</span>, and <span className="text-[#004CD7]">travelling</span>.</p>
                     </div>
                 </div>
                 
@@ -106,10 +106,13 @@ export default function Home() {
                                 href={social.url} 
                                 target="_blank" 
                                 rel="noreferrer"
-                                className="flex items-center gap-3 text-lg text-gray-300 hover:text-[#004CD7] transition-colors"    
+                                className="group flex items-center gap-3 text-lg text-gray-300 transition-all during-300"    
                             >
-                                <Icon className="text-3xl"/>
-                                <span>{social.username}</span>
+                                <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71]"/>
+                                <span className="relative group-hover:text-[#2ECC71]">
+                                    {social.username}
+                                    <span className="absolute left-0 -bottom-1 w-0 h-[3px] rounded bg-[#2ECC71] transition-all duration-300 group-hover:w-full"></span>
+                                </span>
                             </a>
                         );
                     })}
