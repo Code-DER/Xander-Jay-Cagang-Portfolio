@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "../data/portfolioData";
-import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 import work from "../assets/computer-work.svg"
-import Layout from "./Layout";
 
 export default function Home() {
     return (
