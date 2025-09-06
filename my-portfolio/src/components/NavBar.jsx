@@ -27,7 +27,7 @@ export default function NavBar() {
                             key={link.id}
                             to={link.path}
                             className="relative text-xl text-white flex items-center gap-2 transition-colors hover:text-[#2ECC71]
-                            after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:rounded after:w-0
+                            after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[4px] after:rounded after:w-0
                             after:bg-[#2ECC71] after:transition-all after:duration-300 hover:after:w-full"
                         >
                             {link.icon}
