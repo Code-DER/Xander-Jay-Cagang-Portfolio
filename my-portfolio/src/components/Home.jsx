@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 import { portfolioData } from "../data/portfolioData";
 import work from "../assets/computer-work.svg"
 
@@ -20,14 +21,20 @@ export default function Home() {
                             {portfolioData.name}
                         </span>
                     </h1>
-                    <motion.h2
-                        className="mt-2 text-lg md:text-xl text-gray-600"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
-                    >
-                        A passionate Web Developer & Designer 🚀
-                    </motion.h2>
+                    <h2 className="mt-2 text-lg md:text-xl text-gray-600" >
+                        I'm a {' '}
+                        <span className="text-[#004CD7] font-bold">
+                            <Typewriter 
+                                words={['Computer Science Student', 'Web Developer', 'Database Engineer']}
+                                loop={true}
+                                cursor
+                                cursorStyle="|"
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1500}
+                            />
+                        </span>
+                    </h2>
                 </div>
 
                 {/* Image Area */}
