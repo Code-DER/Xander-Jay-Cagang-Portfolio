@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import { portfolioData } from "../data/portfolioData";
 import work from "../assets/computer-work.svg"
 
@@ -15,15 +16,14 @@ export default function Home() {
             >
                 {/* Text Area */}
                 <div className="flex-1">
-                    <h1 className="text-3xl md:text-4xl font-extrabold">
+                    <h1 className="text-3xl md:text-6xl font-extrabold">
                         Hi, I'm{" "}
                         <span className="bg-clip-text text-[#004CD7]">
-                            {portfolioData.name}
+                            Xander Jay!
                         </span>
                     </h1>
-                    <h2 className="mt-2 text-lg md:text-xl text-gray-600" >
-                        I'm a {' '}
-                        <span className="text-[#004CD7] font-bold">
+                    <h2 className="pt-4 mt-2 text-lg md:text-4xl text-gray-600" >
+                        <span className="text-[#2ECC71] font-bold">
                             <Typewriter 
                                 words={['Computer Science Student', 'Web Developer', 'Database Engineer']}
                                 loop={true}
@@ -35,6 +35,39 @@ export default function Home() {
                             />
                         </span>
                     </h2>
+                    <p className="text-gray-300 pt-6">{portfolioData.about}</p>
+                    <div className="pt-6 flex gap-4">
+                        <a
+                            href="/about"
+                            className="flex items-center gap-2 px-20 py-3 border-3 border-[#004CD7] text-white rounded-lg font-semibold shadow-md hover:bg-[#004CD7] transition-colors"                       
+                        >
+                            About Me <FaExternalLinkAlt />
+                        </a>
+                        <a
+                            href="/projects"
+                            className="flex items-center gap-2 px-20 py-3 border-3 border-[#2ECC71] text-white rounded-lg font-semibold shadow-md hover:bg-[#2ECC71] transition-colors"
+                        >
+                            Projects <FaCode />
+                        </a>
+                    </div>
+                    <div className="pt-24 flex gap-4">
+                        {Object.entries(portfolioData.socials).map(([key, social]) => {
+                            const Icon = social.icon;
+                            return (
+                            <a
+                                key={key}
+                                href={social.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-12 h-12 flex items-center justify-center rounded-full 
+                                        border-2 border-[#004CD7] text-[#2ECC71] 
+                                        hover:bg-[#004CD7] transition-colors"
+                            >
+                                <Icon className="text-2xl" /> 
+                            </a>
+                            );
+                        })}
+                    </div>
                 </div>
 
                 {/* Image Area */}
