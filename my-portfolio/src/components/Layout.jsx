@@ -8,12 +8,12 @@ export default function Layout({ children }) {
             style={{ backgroundImage: `url(${bg})` }}
         >
             <NavBar />
-            <main className='flex-1 px-8 md:px-20 py-8 mt-16'>
+            <main className='flex-1 px-8 md:px-20 mt-16 text-white'>
                 {children}
             </main>
-            <footer>
+            {/* <footer>
                 © 2025 My Portfolio
-            </footer>
+            </footer> */}
         </div>
     )
 }
