@@ -1,5 +1,6 @@
 import bg from '../assets/bg.svg'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
     return (
@@ -11,9 +12,7 @@ export default function Layout({ children }) {
             <main className='flex-1 px-8 md:px-20 mt-16 text-white'>
                 {children}
             </main>
-            {/* <footer>
-                © 2025 My Portfolio
-            </footer> */}
+            <Footer />
         </div>
     )
 }
