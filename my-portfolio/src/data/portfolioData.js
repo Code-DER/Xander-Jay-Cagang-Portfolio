@@ -1,5 +1,6 @@
 import { MdEmail } from "react-icons/md";
-import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaJava } from "react-icons/fa";
+import { SiC, SiCplusplus, SiHtml5, SiCss3, SiJavascript,  SiPhp, SiMysql, SiReact, SiTailwindcss, SiPostgresql, SiNodedotjs, SiPython, SiTypescript } from "react-icons/si"
 
 export const portfolioData = {
     name: "Xander Jay C. Cagang",
@@ -69,5 +70,21 @@ export const portfolioData = {
         github: "https://github.com/Code-DER",
         facebook: "https://www.facebook.com/xaxangderder/",
         instagram: "https://www.instagram.com/derderxaxang/",
-    }
+    },
+    skillset: [
+        { name: "C", icon: SiC, color: "#A8B9CC" },
+        { name: "C++", icon: SiCplusplus, color: "#00599C" },
+        { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+        { name: "CSS", icon: SiCss3, color: "#1572B6" },
+        { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+        { name: "Java", icon: FaJava, color: "#007396" },
+        { name: "Python", icon: SiPython, color: "#3776AB" },
+        { name: "PHP", icon: SiPhp, color: "#777BB4" },
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+        { name: "React", icon: SiReact, color: "#61DAFB" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+        { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+        { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+        { name: "Typescript", icon: SiTypescript, color: "#3178C6" },
+]
 }
