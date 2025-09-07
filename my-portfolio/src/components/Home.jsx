@@ -104,11 +104,11 @@ export default function Home() {
                     Short introduction about me
                     </h1>
                     <div className="max-w-2xl space-y-2 text-white pt-20 text-2xl">
-                        <p>I am currently a <span className="text-[#004CD7]">Computer Science</span> student.</p>
+                        <p>I am currently a <span className="font-semibold text-[#004CD7]">Computer Science</span> student.</p>
                         <br/>
-                        <p>I enjoy <span className="text-[#004CD7]">web development</span> ever since I started learning it.</p>
+                        <p>I enjoy <span className="font-semibold text-[#004CD7]">web development</span> ever since I started learning it.</p>
                         <br/>
-                        <p>Some of my other hobbies are <span className="text-[#004CD7]">photography</span>, <span className="text-[#004CD7]">music</span>, and <span className="text-[#004CD7]">travelling</span>.</p>
+                        <p>Some of my other hobbies are <span className="font-semibold text-[#004CD7]">photography</span>, <span className="font-semibold text-[#004CD7]">music</span>, and <span className="font-semibold text-[#004CD7]">travelling</span>.</p>
                     </div>
                 </div>
                 
@@ -122,7 +122,7 @@ export default function Home() {
                     <motion.img
                         src={work}
                         alt="Working Sticker"
-                        className="w-80 h-auto object-contain"
+                        className="w-72 md:w-80 h-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
                     />
                 </motion.div>
             </motion.section>
