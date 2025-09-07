@@ -1,6 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaJava } from "react-icons/fa";
-import { SiC, SiCplusplus, SiHtml5, SiCss3, SiJavascript,  SiPhp, SiMysql, SiReact, SiTailwindcss, SiPostgresql, SiNodedotjs, SiPython, SiTypescript } from "react-icons/si"
+import { SiC, SiCplusplus, SiHtml5, SiCss3, SiJavascript,  SiPhp, SiMysql, SiReact, SiTailwindcss, SiPostgresql, SiNodedotjs, SiPython, SiTypescript, SiGit, SiGithub, SiFigma, SiDocker, SiPostman } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export const portfolioData = {
     name: "Xander Jay C. Cagang",
@@ -86,5 +87,13 @@ export const portfolioData = {
         { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
         { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
         { name: "Typescript", icon: SiTypescript, color: "#3178C6" },
-]
+    ],
+    tools: [
+        { name: "Visual Studio Code", icon: VscVscode, color: "#007ACC" },
+        { name: "Git", icon: SiGit, color: "#F05032" },
+        { name: "Github", icon: SiGithub, color: "gray" },
+        { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+        { name: "Docker", icon: SiDocker, color: "#2496ED" },
+        { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+    ]
 }

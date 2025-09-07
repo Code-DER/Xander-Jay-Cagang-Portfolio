@@ -117,14 +117,52 @@ export default function About() {
                                     {skill.name}
                                 </span>
                             </div>
-                        )
+                        );
                     })}
                 </div>
             </motion.section>
 
             {/* Tech Stack */}
-            <motion.section>
-
+            <motion.section
+                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            >
+                <h1 className="text-3xl font-bold text-center">
+                    <span className="font-bold text-[#004CD7]">
+                        Tools
+                    </span> {" "}
+                    that I use
+                </h1>
+                <div className="flex flex-wrap gap-8 max-w-5xl justify-center text-4xl mt-10">
+                    {portfolioData.tools.map((tool, index) => {
+                        const Icon = tool.icon;
+                        return (
+                            <div key={index} className="group relative cursor-pointer">
+                                <div 
+                                    className="p-10 rounded-full backdrop-blur-lg border border-[#004CD7] bg-gradient-to-tr from-black/60 to-black/40
+                                    shadow-lg hover:shadow-2xl hover:shadow-[#006A18]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
+                                    transition-all duration-300 ease-out cursor-pointer hover:border-[#004CD7]/30 hover:bg-gradient-to-tr hover:from-[#004CD7]/10 
+                                    hover:to-black/40 group relative overflow-hidden"
+                                >
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#004CD7]/10 to-transparent -translate-x-full
+                                    group-hover:translate-x-full transition-transform duration-700 ease-out">
+                                    </div>
+                                    <div className="relative z-10">
+                                        <Icon className="w-12 h-12 fill-current transition-colors duration-300" style={{ color: tool.color }}/>
+                                    </div>
+                                    
+                                </div>
+                                <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-bottom scale-0 px-3 rounded-lg border border-gray-300
+                                bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
+                                style={{ backgroundColor: tool.color, color: "#fff"}}>
+                                    {tool.name}
+                                </span>
+                            </div>
+                        );
+                    })}
+                </div>
             </motion.section>
         </>
     );
