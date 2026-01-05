@@ -1,6 +1,6 @@
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaJava } from "react-icons/fa";
-import { SiC, SiCplusplus, SiHtml5, SiCss3, SiJavascript,  SiPhp, SiMysql, SiReact, SiTailwindcss, SiPostgresql, SiNodedotjs, SiPython, SiTypescript, SiGit, SiGithub, SiFigma, SiDocker, SiPostman } from "react-icons/si";
+import { SiC, SiCplusplus, SiHtml5, SiCss3, SiJavascript,  SiPhp, SiMysql, SiReact, SiTailwindcss, SiPostgresql, SiNodedotjs, SiPython, SiTypescript, SiGit, SiGithub, SiFigma, SiDocker, SiPostman, SiAmazonwebservices } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export const portfolioData = {
@@ -95,5 +95,6 @@ export const portfolioData = {
         { name: "Figma", icon: SiFigma, color: "#F24E1E" },
         { name: "Docker", icon: SiDocker, color: "#2496ED" },
         { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+        { name: "Amazon Web Services", icon: SiAmazonwebservices, color: "#FF9900" }
     ]
 }
