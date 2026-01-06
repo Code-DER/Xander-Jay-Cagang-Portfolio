@@ -34,38 +34,6 @@ export const portfolioData = {
             year: "2024 - Present"
         },
     ],
-    projects: [
-        {
-            title: "My First Portfolio Website",
-            description: "This is my first porfolio website that I made using the basics of HTML, CSS, and JavaScript. This is a self project that I made to showcase the skills I learned in my first year of college.",
-            tech: ["HTML", "CSS", "JavaScript"],
-            link: "https://github.com/Code-DER/Xander-Portfolio",
-        },
-        {
-            title: "ORGanized C-Program",
-            description: "This is a school project made along with my groupmates. It is a C program that allows for data and information management of a school organization.",
-            tech: ["C"],
-            link: "https://github.com/gelooooo-git/CMSC-18-Final-Project"
-        },
-        {
-            title: "Turn-Based Game C-Program",
-            description: "This is a school laboratory activity C program that acts as a turn-based game where the user acts as a player which fights against the computer.",
-            tech: ["C"],
-            link: "https://github.com/Code-DER/Turn-Based-Game"
-        },
-        {
-            title: "Discrete Mathematics II Portfolio",
-            description: "This project is a portfolio website made for one of the subjects I took in my course, Discrete Mathematical Structures in Computer Science II.",
-            tech: ["HTML", "CSS", "JavaScript"],
-            link: "https://github.com/Code-DER/Cagang-CMSC57-ePortfolio"
-        },
-        {
-            title: "RaketNow",
-            description: "This is a startup project that I am currently working on with my groupmates. It is a web application that allows users to apply for jobs and gigs, and for employers to post job listings. It is a project made of multiple tech stacks adn frameworks that we are still learning.",
-            tech: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NestJS", "Node.js", "TypeORM", "ReactJS", "Tailwind CSS", "PostgreSQL"],
-            link: "https://github.com/RakPaperScissors/RaketNow"
-        }
-    ],
     contact: {
         email: "xxxcagang@gmail.com",
         github: "https://github.com/Code-DER",
@@ -96,5 +64,45 @@ export const portfolioData = {
         { name: "Docker", icon: SiDocker, color: "#2496ED" },
         { name: "Postman", icon: SiPostman, color: "#FF6C37" },
         { name: "Amazon Web Services", icon: SiAmazonwebservices, color: "#FF9900" }
+    ],
+    ownProjects: [
+        {
+            title: "My First Portfolio Website",
+            description: "This is my first porfolio website that I made using the basics of HTML, CSS, and JavaScript. This is a self project that I made to showcase the skills I learned in my first year of college.",
+            tech: ["HTML", "CSS", "JavaScript"],
+            link: "https://github.com/Code-DER/Xander-Portfolio",
+        },
+        {
+            title: "RaketNow",
+            description: "This is a startup project that I am worked on with my groupmates. It is a web application that allows users to apply for jobs and gigs, and for employers to post job listings. It is a project made of multiple tech stacks and frameworks that we are still learning.",
+            tech: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NestJS", "Node.js", "TypeORM", "ReactJS", "Tailwind CSS", "PostgreSQL"],
+            link: "https://github.com/RakPaperScissors/RaketNow"
+        }
+    ],
+    schoolActivities: [
+        {
+            title: "ORGanized C-Program",
+            description: "This is a school project made along with my groupmates. It is a C program that allows for data and information management of a school organization.",
+            tech: ["C"],
+            link: "https://github.com/gelooooo-git/CMSC-18-Final-Project"
+        },
+        {
+            title: "Turn-Based Game C-Program",
+            description: "This is a school laboratory activity C program that acts as a turn-based game where the user acts as a player which fights against the computer.",
+            tech: ["C"],
+            link: "https://github.com/Code-DER/Turn-Based-Game"
+        },
+        {
+            title: "Discrete Mathematics II Portfolio",
+            description: "This project is a portfolio website made for one of the subjects I took in my course, Discrete Mathematical Structures in Computer Science II.",
+            tech: ["HTML", "CSS", "JavaScript"],
+            link: "https://github.com/Code-DER/Cagang-CMSC57-ePortfolio"
+        },
+        {
+            title: "University Campus Navigation & Network System",
+            description: "This is a school project I made with my groupmates that utilizes data structures and algorithms using Python. In this project, we created a navigation and wiring network system of the UP Mindanao Campus.",
+            tech: ["Python"],
+            link: "https://github.com/Code-DER/CMSC122_Final_Project",
+        }
     ]
 }
