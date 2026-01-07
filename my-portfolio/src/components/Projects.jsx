@@ -30,18 +30,24 @@ export default function Projects() {
             </motion.section>
             <motion.section
                 className="flex flex-col items-center justify-center gap-6 px-20 py-10"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
             >
-                <h1 className="text-3xl font-bold text-center">
-                    My Own {" "}
-                    <span className="font-bold text-[#004CD7]">
-                        Projects
-                    </span>
-                </h1>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0}}
+                    transition={{ duration: 0.5 }}
+                >
+                    <h1 className="text-3xl font-bold text-center">
+                        My Own {" "}
+                        <span className="font-bold text-[#004CD7]">
+                            Projects
+                        </span>
+                    </h1>
+                </motion.div>
                 <motion.div
                     className="flex flex-wrap w-full justify-center gap-12 max-w-7xl"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0}}
+                    transition={{ duration: 0.5 }}
                 >
                     {portfolioData.ownProjects.map((project, index) => {
                         return (
@@ -52,18 +58,24 @@ export default function Projects() {
             </motion.section>
             <motion.section
                 className="flex flex-col items-center justify-center gap-6 px-20 py-10 "
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
             >
-                <h1 className="text-3xl font-bold text-center">
-                    School {" "}
-                    <span className="font-bold text-[#004CD7]">
-                        Activities
-                    </span>
-                </h1>
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0}}
+                    transition={{ duration: 0.5 }}
+                >
+                    <h1 className="text-3xl font-bold text-center">
+                        School {" "}
+                        <span className="font-bold text-[#004CD7]">
+                            Activities
+                        </span>
+                    </h1>
+                </motion.div>
                 <motion.div
                     className="flex flex-wrap w-full justify-center gap-12 max-w-7xl"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0}}
+                    transition={{ duration: 0.5 }}
                 >
                     {portfolioData.schoolActivities.map((activity, index) => {
                         return (
