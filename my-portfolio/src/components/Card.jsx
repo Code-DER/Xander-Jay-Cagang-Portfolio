@@ -1,109 +1,165 @@
-import React from 'react'
-import styled from 'styled-components'
+    import React from 'react'
+    import styled from 'styled-components'
 
-const Card = ({ data }) => {
-    return (
-        <StyledWrapper>
-            <div className="card" id="card">
-                <div className="content">
-                    <h3>{data.title}</h3>
-                    <p>{data.description}</p>
-                    <div>
-                        {data.tech.map((tech, index) => {
-                            return (
-                                <p>{tech}</p>
-                            )
-                        })}
+    const Card = ({ data }) => {
+        return (
+            <StyledWrapper>
+                <div className="card" id="card">
+                    <div className="content">
+                        <div className="text-section">
+                            <h3>{data.title}</h3>
+                            <p className="description">{data.description}</p>
+                        </div>
+                        <div className="tech-stack">
+                            {data.tech.map((tech, index) => {
+                                return (
+                                    <span key={index} className="tech-badge">{tech}</span>
+                                )
+                            })}
+                        </div>
+                        <a href={data.link} className="action-btn">
+                            <div>link</div>
+                        </a>
                     </div>
-                    <a href={data.link}>
-                        <div>link</div>
-                    </a>
                 </div>
-            </div>
-        </StyledWrapper>
-    )
-}
-
-const StyledWrapper = styled.div`
-    .card {
-        width: 190px;
-        height: 254px;
-        background: #171717;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        box-shadow: 0px 0px 3px 1px #00000088;
-        cursor: pointer;
+            </StyledWrapper>
+        )
     }
 
-    .card .content {
-        border-radius: 5px;
-        background: #171717;
-        width: 186px;
-        height: 250px;
-        z-index: 1;
-        padding: 20px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content::before {
-        opacity: 0;
-        transition: opacity 300ms;
-        content: " ";
-        display: block;
-        background: white;
-        width: 5px;
-        height: 50px;
-        position: absolute;
-        filter: blur(50px);
-        overflow: hidden;
-    }
-
-    .card:hover .content::before {
-        opacity: 1;
-    }
-
-    .card::before {
-        opacity: 0;
-        content: " ";
-        position: absolute;
-        display: block;
-        width: 80px;
-        height: 360px;
-        background: linear-gradient(#ff2288, #387ef0);
-        transition: opacity 300ms;
-        animation: rotation_9018 8000ms infinite linear;
-        animation-play-state: paused;
-    }
-
-    .card:hover::before {
-        opacity: 1;
-        animation-play-state: running;
-    }
-
-    .card::after {
-        position: absolute;
-        content: " ";
-        display: block;
-        width: 250px;
-        height: 360px;
-        background: #17171733;
-        backdrop-filter: blur(50px);
-    }
-
-    @keyframes rotation-9018 {
-        0% {
-            transform: rotate(0deg);
+    const StyledWrapper = styled.div`
+        .card {
+            width: 320px;
+            height: 454px;
+            background: #171717;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 0px 3px 1px #00000088;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 0;
         }
 
-        100% {
-            transform: rotate(360deg);
+        .card .content {
+            position: absolute;
+            inset: 4px;
+            border-radius: 16px;
+            background: #171717;
+            z-index: 1;
+            padding: 16px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
         }
-    }`;
 
-export default Card;
+        // text style
+        .text-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: #ccc;
+            line-height: 1.4;
+        }
+
+        // tech badge
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .tech-badge {
+            background: #333;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            color: #88ccff;
+            border: 1px solid #444;
+        }
+
+        // Button
+        .action-btn {
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #ff2288, #387ef0);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .content::before {
+            opacity: 0;
+            transition: opacity 300ms;
+            content: " ";
+            display: block;
+            background: white;
+            width: 5px;
+            height: 50px;
+            position: absolute;
+            filter: blur(50px);
+            overflow: hidden;
+        }
+
+        .card:hover .content::before {
+            opacity: 1;
+        }
+
+        .card::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 180%;
+            background: linear-gradient(#ff2288, #387ef0);
+            opacity: 0;
+            z-index: -2;
+            transition: opacity 300ms;
+            animation: rotation-9018 6000ms infinite linear;
+            animation-play-state: paused;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+            animation-play-state: running;
+        }
+
+        .card::after {
+            position: absolute;
+            content: " ";
+            inset: 4px;
+            display: block;
+            background: #17171733;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
+        }
+
+        @keyframes rotation-9018 {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }`;
+
+    export default Card;
