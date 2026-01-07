@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <>
             <motion.section
-                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-20 py-10"
+                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-20 pt-15 pb-5"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0}}
                 transition={{ duration: 0.5 }}
@@ -20,8 +20,8 @@ export default function Projects() {
                     <h1 className="text-3xl font-bold text-center">
                         What have I made?
                     </h1>
-                    <p>
-                        These are the projects that I've worked on to work on my coding skills.
+                    <p className="text-lg md:text-xl leading-relaxed">
+                        These are the projects that I've worked on to work on to improve my coding skills.
                         These projects are self-made projects based on interests. I've also included
                         activities and projects that I've made in school.
                     </p>
@@ -29,7 +29,7 @@ export default function Projects() {
                 
             </motion.section>
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
+                className="flex flex-col items-center justify-center gap-6 px-20 py-10"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
@@ -41,7 +41,7 @@ export default function Projects() {
                     </span>
                 </h1>
                 <motion.div
-                    className="flex justify-center gap-10"
+                    className="flex flex-wrap w-full justify-center gap-12 max-w-7xl"
                 >
                     {portfolioData.ownProjects.map((project, index) => {
                         return (
@@ -50,7 +50,12 @@ export default function Projects() {
                     })}
                 </motion.div>
             </motion.section>
-            <motion.section>
+            <motion.section
+                className="flex flex-col items-center justify-center gap-6 px-20 py-10 "
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            >
                 <h1 className="text-3xl font-bold text-center">
                     School {" "}
                     <span className="font-bold text-[#004CD7]">
@@ -58,7 +63,7 @@ export default function Projects() {
                     </span>
                 </h1>
                 <motion.div
-                    className="flex justify-center gap-10"
+                    className="flex flex-wrap w-full justify-center gap-12 max-w-7xl"
                 >
                     {portfolioData.schoolActivities.map((activity, index) => {
                         return (

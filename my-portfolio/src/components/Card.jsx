@@ -114,6 +114,7 @@
             position: absolute;
             filter: blur(50px);
             overflow: hidden;
+            z-index: 2;
         }
 
         .card:hover .content::before {
