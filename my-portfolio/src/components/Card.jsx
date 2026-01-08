@@ -7,8 +7,12 @@
                 <div className="card" id="card">
                     <div className="content">
                         <div className="text-section">
-                            <h3>{data.title}</h3>
-                            <p className="description">{data.description}</p>
+                            <div className="text-section-title">
+                                <h3>{data.title}</h3>
+                            </div>
+                            <div className="text-section-description">
+                                <p className="description">{data.description}</p>
+                            </div>
                         </div>
                         <div className="tech-stack">
                             {data.tech.map((tech, index) => {
@@ -52,17 +56,31 @@
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
         }
 
         // text style
+        .text-section {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-section-title {
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-section-description {
+            height: 60%;
+            display: flex;
+            align-items: center;
+        }
         .text-section h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: #fff;
         }
-
         .description {
             font-size: 0.9rem;
             color: #ccc;
@@ -74,8 +92,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             gap: 8px;
             margin: 15px 0;
+            height: 30%;
         }
 
         .tech-badge {
@@ -97,6 +117,7 @@
             font-weight: bold;
             font-size: 0.9rem;
             transition: transform 0.2s;
+            height: 10%;
         }
 
         .action-btn:hover {
