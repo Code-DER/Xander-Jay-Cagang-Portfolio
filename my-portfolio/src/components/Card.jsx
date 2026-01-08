@@ -34,29 +34,29 @@
         .card {
             width: 320px;
             height: 454px;
-            background: #171717;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
             position: relative;
             box-shadow: 0px 0px 3px 1px #00000088;
-            border-radius: 10px;
+            border-radius: 16px;
             cursor: pointer;
             z-index: 0;
+            background: linear-gradient(to top left, #111827, #030712);
         }
 
         .card .content {
             position: absolute;
             inset: 4px;
             border-radius: 16px;
-            background: #171717;
             z-index: 1;
             padding: 16px;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: linear-gradient(to top left, #111827, #030712);
         }
 
         // text style
@@ -157,6 +157,7 @@
             transition: opacity 300ms;
             animation: rotation-9018 6000ms infinite linear;
             animation-play-state: paused;
+            filter: blur(20px);
         }
 
         .card:hover::before {
@@ -170,7 +171,7 @@
             inset: 4px;
             display: block;
             background: #17171733;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            // box-shadow: 0 0 20px rgba(0, 0, 0, 3.8);
             border-radius: 16px;
         }
 
