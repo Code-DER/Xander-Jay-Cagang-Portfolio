@@ -144,7 +144,7 @@ export default function Home() {
                                 href={social.url} 
                                 target="_blank" 
                                 rel="noreferrer"
-                                className="group flex items-center gap-3 text-lg text-gray-300 transition-all during-300"    
+                                className="group flex items-center gap-3 text-lg text-gray-300 transition-all during-300 ml-12"    
                             >
                                 <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71]"/>
                                 <span className="relative group-hover:text-[#2ECC71]">
