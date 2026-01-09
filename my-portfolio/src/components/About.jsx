@@ -98,12 +98,12 @@ export default function About() {
                         return (
                             <div key={index} className="group relative cursor-pointer">
                                 <div 
-                                    className="p-10 rounded-full backdrop-blur-lg border border-[#2ECC71] bg-gradient-to-tr from-black/60 to-black/40
-                                    shadow-lg hover:shadow-2xl hover:shadow-[#006A18]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
-                                    transition-all duration-300 ease-out cursor-pointer hover:border-[#2ECC71]/30 hover:bg-gradient-to-tr hover:from-[#2ECC71]/10 
+                                    className="p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
+                                    shadow-lg hover:shadow-2xl hover:shadow-[#FF5F00]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
+                                    transition-all duration-300 ease-out cursor-pointer hover:border-[#FF5F00]/30 hover:bg-gradient-to-tr hover:from-[#FF5F00]/10 
                                     hover:to-black/40 group relative overflow-hidden"
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#2ECC71]/10 to-transparent -translate-x-full
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F00]/10 to-transparent -translate-x-full
                                     group-hover:translate-x-full transition-transform duration-700 ease-out">
                                     </div>
                                     <div className="relative z-10">
@@ -141,12 +141,12 @@ export default function About() {
                         return (
                             <div key={index} className="group relative cursor-pointer">
                                 <div 
-                                    className="p-10 rounded-full backdrop-blur-lg border border-[#004CD7] bg-gradient-to-tr from-black/60 to-black/40
-                                    shadow-lg hover:shadow-2xl hover:shadow-[#006A18]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
-                                    transition-all duration-300 ease-out cursor-pointer hover:border-[#004CD7]/30 hover:bg-gradient-to-tr hover:from-[#004CD7]/10 
+                                    className="p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
+                                    shadow-lg hover:shadow-2xl hover:shadow-[#FF5F00]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
+                                    transition-all duration-300 ease-out cursor-pointer hover:border-[#FF5F00]/30 hover:bg-gradient-to-tr hover:from-[#FF5F00]/10 
                                     hover:to-black/40 group relative overflow-hidden"
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#004CD7]/10 to-transparent -translate-x-full
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F00]/10 to-transparent -translate-x-full
                                     group-hover:translate-x-full transition-transform duration-700 ease-out">
                                     </div>
                                     <div className="relative z-10">

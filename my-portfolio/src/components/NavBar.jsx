@@ -18,7 +18,7 @@ export default function NavBar() {
             className="fixed top-0 left-0 w-full z-50 bg-white/2 backdrop-blur-md shadow-lg py-2"
         >
             <div className='max-w-6xl mx-auto flex items-center justify-between gap-8 py-3 text-gray-700 font-medium'>
-                <div className='text-xl text-[#2ECC71] font-bold'>
+                <div className='text-xl text-[#FF5F00] font-bold'>
                     Code-DER
                 </div>
                 <div className='flex gap-16'>

@@ -112,7 +112,7 @@
             border-radius: 15px;
             font-size: 0.75rem;
             color: #88ccff;
-            border: 1px solid #444;
+            border: 1px solid #88ccff;
         }
 
         .tech-stack div:nth-child(1) {

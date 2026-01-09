@@ -78,7 +78,7 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <motion.div
-                        className="p-[4px] rounded-full bg-gradient-to-r from-[#004CD7] to-[#4A90E2] shadow-lg"
+                        className="p-[4px] rounded-full bg-gradient-to-r from-[#FF4F00] to-[#FF5F00] shadow-lg"
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
                     >

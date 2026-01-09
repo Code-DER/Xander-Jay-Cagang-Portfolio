@@ -10,7 +10,7 @@ export default function Footer() {
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-8 py-3 text-white font-medium">
                 <div>
-                    Created by <span className="text-[#2ECC71]">Xander Jay C. Cagang</span>
+                    Created by <span className="text-[#FF5F00]">Xander Jay C. Cagang</span>
                 </div>
                 <div>
                     Copyright © 2025
