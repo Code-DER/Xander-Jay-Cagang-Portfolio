@@ -25,7 +25,7 @@ export default function Home() {
                     <h2 className="pt-4 mt-2 text-lg md:text-4xl text-gray-600" >
                         <span className="text-[#2ECC71] font-bold">
                             <Typewriter 
-                                words={['Computer Science Student', 'Web Developer', 'Database Engineer']}
+                                words={['Computer Science Student', 'Web Developer', 'Backend Developer']}
                                 loop={true}
                                 cursor
                                 cursorStyle="|"

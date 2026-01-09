@@ -16,7 +16,7 @@ export const portfolioData = {
         instagram: {url: "https://www.instagram.com/derderxaxang/", icon: FaInstagram, username: "derderxaxang"},
         tiktok: {url: "https://www.tiktok.com/@xanderderjay", icon: FaTiktok, username: "xanderderjay"},
     },
-    about: "I am a passionate web developer with a focus on creating dynamic and progressive web applications. My journey in web development has been driven by a desire to build user-friendly and efficient solutions that make a difference.",
+    about: "I am a passionate computer science student with a focus on creating dynamic and progressive web applications. I have been driven by a desire to build user-friendly and efficient solutions that make a difference.",
     education: [
         {
             school: "Catalunan Grande Elementary School",

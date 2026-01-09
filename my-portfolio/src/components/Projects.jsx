@@ -20,10 +20,10 @@ export default function Projects() {
                     <h1 className="text-3xl font-bold text-center">
                         What have I made?
                     </h1>
-                    <p className="text-lg md:text-xl leading-relaxed">
-                        These are the projects that I've worked on to work on to improve my coding skills.
-                        These projects are self-made projects based on interests. I've also included
-                        activities and projects that I've made in school.
+                    <p className="text-lg md:text-xl leading-relaxed text-justify">
+                        These are the projects that I've made to improve my coding skills.
+                        These projects are self-made projects based on learnings and interests. 
+                        I've also included activities and projects that I've made in school.
                     </p>
                 </motion.div>
                 
