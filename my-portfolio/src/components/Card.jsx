@@ -26,7 +26,7 @@
                                 })}
                             </div>
                         </div>
-                        <a href={data.link} className="action-btn">
+                        <a href={data.link} className="action-btn" target="_blank">
                             <button>
                                 <div>Learn more</div>
                             </button>
@@ -71,7 +71,7 @@
             height: 60%;
             display: flex;
             flex-direction: column;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(59 130 246);
         }
         .text-section-title {
             height: 40%;
@@ -88,7 +88,7 @@
         .text-section h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            color: #fff;
+            color: rgb(59 130 246);
         }
         .description {
             font-size: 0.9rem;
@@ -188,7 +188,7 @@
             transform: translate(-50%, -50%);
             width: 100px;
             height: 180%;
-            background: linear-gradient(#ff2288, #387ef0);
+            background: linear-gradient(135deg, #FF4D00 0%, #FFD700 100%);
             opacity: 0;
             z-index: -2;
             transition: opacity 300ms;
