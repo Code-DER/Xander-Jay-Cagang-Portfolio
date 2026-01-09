@@ -22,7 +22,9 @@
                             })}
                         </div>
                         <a href={data.link} className="action-btn">
-                            <div>link</div>
+                            <button>
+                                <div>Learn more</div>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -109,19 +111,38 @@
 
         // Button
         .action-btn {
-            padding: 10px 20px;
-            background: linear-gradient(90deg, #ff2288, #387ef0);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: transform 0.2s;
-            height: 10%;
+            max-width: 128px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #0ea539; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
-
         .action-btn:hover {
-            transform: scale(1.05);
+            background-color: #0ea5e9;
+            cursor: pointer;
+        }
+        .action-btn:active {
+            transform: scale(0.98);
+        }
+        .action-btn button {
+            background: none;
+            border: none;
+            padding: 8px 20px;
+            width: 100%;
+        }
+        .action-btn div {
+            text-decoration: none;
+            color: #0ea539;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .action-btn:hover div {
+            color: white;
+            cursor: pointer;
         }
 
         .content::before {
