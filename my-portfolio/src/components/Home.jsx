@@ -9,14 +9,14 @@ export default function Home() {
         <>
             {/* Hero */}
             <motion.section
-                className="min-h-[calc(100vh-4rem)] flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-20"
+                className="min-h-[calc(100vh-4rem)] flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-12 md:px-20"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
             >
                 {/* Text Area */}
-                <div className="flex-1">
-                    <h1 className="text-3xl md:text-6xl font-extrabold">
+                <div className="flex-1 order-2 md:order-1">
+                    <h1 className="text-3xl md:text-6xl font-extrabold leading-tight">
                         Hi, I'm{" "}
                         <span className="bg-clip-text text-[#004CD7]">
                             Xander Jay!
@@ -35,22 +35,26 @@ export default function Home() {
                             />
                         </span>
                     </h2>
-                    <p className="text-gray-300 pt-6">{portfolioData.about}</p>
-                    <div className="pt-6 flex gap-4">
+
+                    <p className="text-gray-300 pt-6 max-w-lg mx-auto md:mx-0">
+                        {portfolioData.about}
+                    </p>
+                    <div className="pt-8 flex flex-col sm:flex-grow justify-center md:justify-start gap-4">
                         <a
                             href="/about"
-                            className="flex items-center gap-2 px-20 py-3 border-3 border-[#004CD7] text-white rounded-lg font-semibold shadow-md hover:bg-[#004CD7] transition-colors"                       
+                            className="flex items-center justify-center gap-2 px-8 md:px-12 py-3 border-3 border-[#004CD7] text-white rounded-lg font-semibold shadow-md hover:bg-[#004CD7] transition-colors"                       
                         >
                             About Me <FaExternalLinkAlt />
                         </a>
                         <a
                             href="/projects"
-                            className="flex items-center gap-2 px-20 py-3 border-3 border-[#2ECC71] text-white rounded-lg font-semibold shadow-md hover:bg-[#2ECC71] transition-colors"
+                            className="flex items-center justify-center gap-2 px-8 md:px-12 py-3 border-3 border-[#2ECC71] text-white rounded-lg font-semibold shadow-md hover:bg-[#2ECC71] transition-colors"
                         >
                             Projects <FaCode />
                         </a>
                     </div>
-                    <div className="pt-24 flex gap-4">
+
+                    <div className="pt-12 md:pt-12 flex justify-center md:justify-start gap-4">
                         {Object.entries(portfolioData.socials).map(([key, social]) => {
                             const Icon = social.icon;
                             return (
@@ -72,7 +76,7 @@ export default function Home() {
 
                 {/* Image Area */}
                 <motion.div
-                    className="flex-1 flex justify-center"
+                    className="flex-1 flex justify-center order-1 md:order-2"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
@@ -85,7 +89,7 @@ export default function Home() {
                         <motion.img 
                             src={portfolioData.image}
                             alt={portfolioData.name}
-                            className="w-64 h-64 object-cover rounded-full"
+                            className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
                         />
                     </motion.div>
                 </motion.div>
@@ -93,17 +97,17 @@ export default function Home() {
 
             {/* Short intro */}
             <motion.section
-                className="min-h-auto flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 px-20 py-20"
+                className="min-h-auto flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 px-6 py-20 md:px-20"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
             >
                 {/* Text Area */}
-                <div className="flex-1 basis-2/3">
-                    <h1 className="text-3xl md:text-4xl font-bold text-center">
+                <div className="flex-1 basis-full md:basis-2/3">
+                    <h1 className="text-3xl md:text-4xl font-bold md:text-left text-center">
                     Short introduction about me
                     </h1>
-                    <div className="max-w-2xl space-y-2 text-white pt-20 text-2xl">
+                    <div className="max-w-2xl space-y-2 text-white pt-10 md:pt-20 text-xl md:text-2xl mx-auto md:mx-0">
                         <p>I am currently a <span className="font-semibold text-[#004CD7]">Computer Science</span> student.</p>
                         <br/>
                         <p>I enjoy <span className="font-semibold text-[#004CD7]">web development</span> ever since I started learning it.</p>
@@ -114,7 +118,7 @@ export default function Home() {
                 
                 {/* Image Area */}
                 <motion.div
-                    className="flex-1 flex justify-center basis-1/3"
+                    className="flex-1 flex justify-center basis-full md:basis-1/3 order-first md:order-last"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
@@ -122,20 +126,20 @@ export default function Home() {
                     <motion.img
                         src={work}
                         alt="Working Sticker"
-                        className="w-72 md:w-80 h-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
+                        className="w-56 md:w-80 h-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
                     />
                 </motion.div>
             </motion.section>
 
             {/* Contacts */}
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
+                className="flex flex-col items-center justify-center gap-6 py-16 px-6 md:px-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
                 <h2 className="text-3xl font-bold text-center">Find me on</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl text-3xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:max-w-4xl">
                     {Object.entries(portfolioData.socials).map(([key, social]) => { 
                         const Icon = social.icon;
                         return (
@@ -144,7 +148,7 @@ export default function Home() {
                                 href={social.url} 
                                 target="_blank" 
                                 rel="noreferrer"
-                                className="group flex items-center gap-3 text-lg text-gray-300 transition-all during-300 ml-12"    
+                                className="group flex items-center md:justify-start gap-3 text-lg text-gray-300 transition-all during-300 ml-12"    
                             >
                                 <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71]"/>
                                 <span className="relative group-hover:text-[#2ECC71]">

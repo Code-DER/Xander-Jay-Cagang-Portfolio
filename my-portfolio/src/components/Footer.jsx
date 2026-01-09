@@ -8,7 +8,9 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="bottom-0 w-full z-50 bg-white/1 backdrop-blur-sm shadow-lg py-2"
         >
-            <div className="max-w-7xl mx-auto flex items-center justify-between gap-8 py-3 text-white font-medium">
+            <div className="mx-auto flex items-center justify-between flex-col gap-4 py-3 text-white font-medium
+                            xl:max-w-7xl sm:flex-row"
+            >
                 <div>
                     Created by <span className="text-[#FF5F00]">Xander Jay C. Cagang</span>
                 </div>
