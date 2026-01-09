@@ -15,11 +15,16 @@
                             </div>
                         </div>
                         <div className="tech-stack">
-                            {data.tech.map((tech, index) => {
-                                return (
-                                    <span key={index} className="tech-badge">{tech}</span>
-                                )
-                            })}
+                            <div>
+                                <p>Tech Stack:</p>
+                            </div>
+                            <div>
+                                {data.tech.map((tech, index) => {
+                                    return (
+                                        <span key={index} className="tech-badge">{tech}</span>
+                                    )
+                                })}
+                            </div>
                         </div>
                         <a href={data.link} className="action-btn">
                             <button>
@@ -35,7 +40,7 @@
     const StyledWrapper = styled.div`
         .card {
             width: 320px;
-            height: 454px;
+            height: 474px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -57,7 +62,7 @@
             color: white;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            // align-items: center;
             background: linear-gradient(to top left, #111827, #030712);
         }
 
@@ -66,17 +71,19 @@
             height: 60%;
             display: flex;
             flex-direction: column;
+            border-bottom: 1px solid gray;
         }
         .text-section-title {
             height: 40%;
             display: flex;
-            justify-content: center;
+            text-align: left;
             align-items: center;
         }
         .text-section-description {
             height: 60%;
             display: flex;
             align-items: center;
+            text-align: justify;
         }
         .text-section h3 {
             font-size: 1.5rem;
@@ -92,9 +99,8 @@
         // tech badge
         .tech-stack {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            text-align: left;
             gap: 8px;
             margin: 15px 0;
             height: 30%;
@@ -107,6 +113,15 @@
             font-size: 0.75rem;
             color: #88ccff;
             border: 1px solid #444;
+        }
+
+        .tech-stack div:nth-child(1) {
+            color: #ccc;
+        }
+        .tech-stack div:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
         }
 
         // Button
