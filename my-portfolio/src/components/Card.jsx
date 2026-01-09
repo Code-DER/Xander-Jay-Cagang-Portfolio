@@ -127,17 +127,18 @@
         // Button
         .action-btn {
             max-width: 128px;
-            background-color: transparent;
+            background-color: rgba(59, 130, 246, 0.10);
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #0ea539; 
+            border: 1px rgb(59 130 246) solid; 
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
+            border-radius: 6px;
         }
         .action-btn:hover {
-            background-color: #0ea5e9;
+            background-color: rgba(59, 130, 246, 0.5);
             cursor: pointer;
         }
         .action-btn:active {
@@ -151,7 +152,7 @@
         }
         .action-btn div {
             text-decoration: none;
-            color: #0ea539;
+            color: rgb(59 130 246);
             font-weight: 500;
             transition: color 0.3s ease;
         }
