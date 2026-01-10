@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <>
             <motion.section
-                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-20 pt-10 pb-5"
+                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-6 md:px-20 pt-10 pb-5"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0}}
                 transition={{ duration: 0.5 }}
@@ -18,7 +18,11 @@ export default function Projects() {
                     className="flex-1 basis-2/3 max-2-2xl space-y-6 text-gray-200"
                 >
                     <h1 className="text-3xl font-bold text-center">
-                        What have I made?
+                        What have I {" "} 
+                        <span className="font-bold text-[#004CD7]">
+                            made
+                        </span>
+                        ?
                     </h1>
                     <p className="text-lg md:text-xl leading-relaxed text-justify">
                         These are the projects that I've made to improve my coding skills.

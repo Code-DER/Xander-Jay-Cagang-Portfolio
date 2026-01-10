@@ -50,7 +50,7 @@
             border-radius: 16px;
             cursor: pointer;
             z-index: 0;
-            background: linear-gradient(to top left, #111827, #030712);
+            background: linear-gradient(to bottom left, #111827, #030712);
         }
 
         .card .content {
@@ -63,7 +63,7 @@
             display: flex;
             flex-direction: column;
             // align-items: center;
-            background: linear-gradient(to top left, #111827, #030712);
+            background: linear-gradient(to bottom left, #111827, #030712);
         }
 
         // text style
