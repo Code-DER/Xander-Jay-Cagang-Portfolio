@@ -76,13 +76,13 @@ export default function Home() {
 
                 {/* Image Area */}
                 <motion.div
-                    className="flex-1 flex justify-center order-1 md:order-2"
+                    className="flex-1 flex justify-center items-center basis-full md:basis-1/3 order-1 md:order-2"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <motion.div
-                        className="p-[4px] rounded-full bg-gradient-to-r from-[#FF4F00] to-[#FF5F00] shadow-lg"
+                        className="p-[4px] h-fit rounded-full bg-gradient-to-r from-[#FF4F00] to-[#FF5F00] shadow-lg"
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 300 }}
                     >
