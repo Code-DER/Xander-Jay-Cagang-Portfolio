@@ -8,7 +8,7 @@ export default function About() {
         <>
             {/* Get to know info */}
             <motion.section
-                className="min-h-[calc(100vh-4rem)] flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-20 mt-6 md:mt-0"
+                className="min-h-[calc(100vh-4rem)] flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-6 md:px-20 mt-6 md:mt-0"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ export default function About() {
                         </p>
                         <br/>
                         <p className="text-lg md:text-xl">Outside of coding, I also enjoy:</p>
-                        <ul className="grid grid-cols-2 gap-3 pt-4 text-lg">
+                        <ul className="grid grid-cols-2 gap-3 pt-4 text-lg ml-12 md:ml-0">
                             <li className="flex items-center gap-2">
                                 <FaCamera className="text-[#2ECC71]"/> Photography
                             </li>
