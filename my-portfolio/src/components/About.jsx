@@ -81,7 +81,7 @@ export default function About() {
 
             {/* Skillset */}
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
+                className="flex flex-col items-center justify-center gap-6 py-4 md:py-16 px-6 md:px-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
@@ -92,13 +92,13 @@ export default function About() {
                         Skillset
                     </span>
                 </h1>
-                <div className="flex flex-wrap gap-8 max-w-5xl justify-center text-4xl mt-10">
+                <div className="flex flex-wrap gap-4 md:gap-8 max-w-5xl justify-center text-4xl mt-4 md:mt-10 px-4">
                     {portfolioData.skillset.map((skill, index) => {
                         const Icon = skill.icon;
                         return (
                             <div key={index} className="group relative cursor-pointer">
                                 <div 
-                                    className="p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
+                                    className="p-4 md:p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
                                     shadow-lg hover:shadow-2xl hover:shadow-[#FF5F00]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
                                     transition-all duration-300 ease-out cursor-pointer hover:border-[#FF5F00]/30 hover:bg-gradient-to-tr hover:from-[#FF5F00]/10 
                                     hover:to-black/40 group relative overflow-hidden"
@@ -107,12 +107,13 @@ export default function About() {
                                     group-hover:translate-x-full transition-transform duration-700 ease-out">
                                     </div>
                                     <div className="relative z-10">
-                                        <Icon className="w-12 h-12 fill-current transition-colors duration-300" style={{ color: skill.color }}/>
+                                        <Icon className="w-8 h-8 md:w-12 md:h-12 fill-current transition-colors duration-300" style={{ color: skill.color }}/>
                                     </div>
                                     
                                 </div>
-                                <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-bottom scale-0 px-3 rounded-lg border border-gray-300
-                                bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
+
+                                <span className="absolute -top-12 left-[50%] -translate-x-[50%] z-20 origin-bottom scale-0 px-3 rounded-lg border border-gray-300
+                                bg-white py-1 text-xs md:text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
                                 style={{ backgroundColor: skill.color, color: "#fff"}}>
                                     {skill.name}
                                 </span>
@@ -124,7 +125,7 @@ export default function About() {
 
             {/* Tech Stack */}
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16 px-20"
+                className="flex flex-col items-center justify-center gap-6 py-10 md:py-16 px-6 md:px-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
@@ -135,13 +136,13 @@ export default function About() {
                     </span> {" "}
                     that I use
                 </h1>
-                <div className="flex flex-wrap gap-8 max-w-5xl justify-center text-4xl mt-10">
+                <div className="flex flex-wrap gap-4 md:gap-8 max-w-5xl justify-center text-4xl mt-4 md:mt-10 px-4">
                     {portfolioData.tools.map((tool, index) => {
                         const Icon = tool.icon;
                         return (
                             <div key={index} className="group relative cursor-pointer">
                                 <div 
-                                    className="p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
+                                    className="p-4 md:p-10 rounded-full backdrop-blur-lg border border-[#FF5F00] bg-gradient-to-tr from-black/60 to-black/40
                                     shadow-lg hover:shadow-2xl hover:shadow-[#FF5F00]/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 
                                     transition-all duration-300 ease-out cursor-pointer hover:border-[#FF5F00]/30 hover:bg-gradient-to-tr hover:from-[#FF5F00]/10 
                                     hover:to-black/40 group relative overflow-hidden"
@@ -150,12 +151,12 @@ export default function About() {
                                     group-hover:translate-x-full transition-transform duration-700 ease-out">
                                     </div>
                                     <div className="relative z-10">
-                                        <Icon className="w-12 h-12 fill-current transition-colors duration-300" style={{ color: tool.color }}/>
+                                        <Icon className="w-8 h-8 md:w-12 md:h-12 fill-current transition-colors duration-300" style={{ color: tool.color }}/>
                                     </div>
                                     
                                 </div>
                                 <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-bottom scale-0 px-3 rounded-lg border border-gray-300
-                                bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
+                                bg-white py-1 text-xs md:text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
                                 style={{ backgroundColor: tool.color, color: "#fff"}}>
                                     {tool.name}
                                 </span>
