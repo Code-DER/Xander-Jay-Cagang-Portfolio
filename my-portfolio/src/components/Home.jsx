@@ -76,7 +76,7 @@ export default function Home() {
 
                 {/* Image Area */}
                 <motion.div
-                    className="flex-1 flex justify-center items-center basis-full md:basis-1/3 order-1 md:order-2"
+                    className="flex-1 flex justify-center items-center order-1 md:order-2"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
