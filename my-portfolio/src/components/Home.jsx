@@ -150,7 +150,7 @@ export default function Home() {
                                 rel="noreferrer"
                                 className="group flex items-center md:justify-start gap-3 text-lg text-gray-300 transition-all during-300 ml-12"    
                             >
-                                <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71]"/>
+                                <Icon className="text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71] text-[#2ECC71] md:text-white" />
                                 <span className="relative group-hover:text-[#2ECC71]">
                                     {social.username}
                                     <span className="absolute left-0 -bottom-1 w-0 h-[3px] rounded bg-[#2ECC71] transition-all duration-300 group-hover:w-full"></span>
