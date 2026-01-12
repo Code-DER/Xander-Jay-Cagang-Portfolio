@@ -134,13 +134,13 @@ export default function Home() {
 
             {/* Contacts */}
             <motion.section
-                className="flex flex-col items-center justify-center gap-6 py-16 px-6 md:px-20"
+                className="flex flex-col items-center justify-center gap-6 py-16 px-3 md:px-6 lg:px-16"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
             >
                 <h2 className="text-3xl font-bold text-center">Find me on</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:max-w-4xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 w-full lg:max-w-4xl">
                     {Object.entries(portfolioData.socials).map(([key, social]) => { 
                         const Icon = social.icon;
                         return (
@@ -149,10 +149,10 @@ export default function Home() {
                                 href={social.url} 
                                 target="_blank" 
                                 rel="noreferrer"
-                                className="group flex items-center md:justify-start gap-3 text-lg text-gray-300 transition-all during-300 ml-8 md:ml-10"    
+                                className="group flex items-center md:justify-start gap-3 text-lg text-gray-300 transition-all during-300 ml-[20%] md:ml-10"    
                             >
-                                <Icon className="text-xl md:text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71] text-[#2ECC71] md:text-white" />
-                                <span className="text-xs md:text-xl relative group-hover:text-[#2ECC71]">
+                                <Icon className="text-xl md:text-xl lg:text-2xl transition-transform duration-300 group-hover:scale-110 group-hover:text-[#2ECC71] text-[#2ECC71] lg:text-white" />
+                                <span className="text-xs md:text-l lg:text-xl relative group-hover:text-[#2ECC71]">
                                     {social.username}
                                     <span className="absolute left-0 -bottom-1 w-0 h-[3px] rounded bg-[#2ECC71] transition-all duration-300 group-hover:w-full"></span>
                                 </span>
