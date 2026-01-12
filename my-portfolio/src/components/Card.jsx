@@ -212,6 +212,13 @@
             border-radius: 16px;
         }
 
+        @media (max-width: 320px) {
+            .card {
+                width: 290px;
+                height: 530px;
+            }
+        }
+
         @keyframes rotation-9018 {
             0% {
                 transform: translate(-50%, -50%) rotate(0deg);

@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <>
             <motion.section
-                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-6 md:px-20 pt-10 pb-5"
+                className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-8 px-3 md:px-20 pt-10 pb-5"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0}}
                 transition={{ duration: 0.5 }}
