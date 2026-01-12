@@ -16,7 +16,7 @@ export default function Home() {
             >
                 {/* Text Area */}
                 <div className="flex-1 order-2 md:order-1">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                         Hi, I'm{" "}
                         <span className="bg-clip-text text-[#004CD7]">
                             Xander Jay!
