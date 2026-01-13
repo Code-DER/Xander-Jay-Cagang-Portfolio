@@ -11,7 +11,7 @@ Built with **Vite + React**, styled with **TailwindCSS**, and enhanced with smoo
 ---
 
 ## ✨ Features
-- 📄 **Single Page Navigation** – Smooth scroll to different sections
+- 📄 **Multiple-Page Navigation** – Simple navigation to different sections
 - ⚡ **Fast & Responsive** – Optimized for desktop and mobile
 - 🔄 **Easy to Update** – All portfolio content stored in a single data file (`portfolioData.js`)
 - 🎥 **Animations** – Framer Motion for beautiful transitions
