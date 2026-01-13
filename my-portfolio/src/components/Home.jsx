@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 import { portfolioData } from "../data/portfolioData";
+import { Link } from "react-router-dom";
 import work from "../assets/computer-work.svg"
 
 export default function Home() {
@@ -41,18 +42,18 @@ export default function Home() {
                     </p>
 
                     <div className="pt-8 flex flex-col xs:flex-row justify-center md:justify-start gap-4">
-                        <a
-                            href="/about"
+                        <Link
+                            to="/about"
                             className="flex items-center justify-center gap-2 px-6 sm:px-10 py-3 border-3 border-[#004CD7] text-white rounded-lg font-semibold shadow-md hover:bg-[#004CD7] transition-colors text-sm sm:text-base"                       
                         >
                             About Me <FaExternalLinkAlt />
-                        </a>
-                        <a
-                            href="/projects"
+                        </Link>
+                        <Link
+                            to="/projects"
                             className="flex items-center justify-center gap-2 px-6 sm:px-10 py-3 border-3 border-[#2ECC71] text-white rounded-lg font-semibold shadow-md hover:bg-[#2ECC71] transition-colors text-sm sm:text-base"
                         >
                             Projects <FaCode />
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="pt-10 flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
