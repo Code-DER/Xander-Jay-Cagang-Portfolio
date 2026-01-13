@@ -74,7 +74,7 @@ export const portfolioData = {
         },
         {
             title: "RaketNow",
-            description: "This is a startup project that I am worked on with my groupmates. It is a web application that allows users to apply for jobs and gigs, and for employers to post job listings. It is a project made of multiple tech stacks and frameworks that we are still learning.",
+            description: "This is a startup project that I worked on with my groupmates. It is a web application that allows users to apply for jobs and gigs, and for employers to post job listings. It is a project made of multiple tech stacks and frameworks that we are still learning.",
             tech: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NestJS", "Node.js", "TypeORM", "ReactJS", "Tailwind CSS", "PostgreSQL"],
             link: "https://github.com/RakPaperScissors/RaketNow"
         }
