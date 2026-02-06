@@ -77,6 +77,18 @@ export const portfolioData = {
             description: "This is a startup project that I worked on with my groupmates. It is a web application that allows users to apply for jobs and gigs, and for employers to post job listings. It is a project made of multiple tech stacks and frameworks that we are still learning.",
             tech: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NestJS", "Node.js", "TypeORM", "ReactJS", "Tailwind CSS", "PostgreSQL"],
             link: "https://github.com/RakPaperScissors/RaketNow"
+        },
+        {
+            title: "My Second Portfolio Website",
+            description: "This is my second portfolio website that I made with frameworks. This project is the current website that you are on. It includes information about me, my skills, and my projects.",
+            tech: ["Vite", "ReactJS", "Tailwind CSS", "Framer Motion"],
+            link: "https://github.com/Code-DER/Xander-Jay-Cagang-Portfolio"
+        },
+        {
+            title: "Weather App",
+            description: "This is a weather application that I built using Python. In this project, I practiced making a web app Python and learned how to fetch API on Python. ",
+            tech: ["Python", "Streamlit", "Open-Meteo API"],
+            link: "https://github.com/Code-DER/weather-app"
         }
     ],
     schoolActivities: [
